@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+        <script>
+        $('form').card({
+            container: '.card-wrapper',
+            width: 280,
+
+            formSelectors: {
+                nameInput: 'input[name="first-name"], input[name="last-name"]'
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="nav">
+        {% if request.user.is_authenticated %}
+            <div><a href="{% url 'pay'  %}">Perform another payment</a></div>
+<!--            <div>Hi {{ user.username }}!</div>-->
+            <div><a href="{% url 'login' %}">Logout ({{ user.username }}) </a></div>
+        {% endif %}
+    </div>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

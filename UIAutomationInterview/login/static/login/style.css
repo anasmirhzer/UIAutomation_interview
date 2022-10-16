@@ -1,0 +1,44 @@
+body {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/payment_bg_lg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    margin: 0px;
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center;
+}
+form {
+    margin-top: 6rem;
+   }
+h1 {
+    text-align: center;
+}
+label {
+    display : block;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+}
+input[type=text],input[type=password] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 15px;
+}
+
+input[type=submit] {
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 35px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: "Lucida Console", Courier, monospace;
+}

@@ -1,24 +1,50 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700,500);
 
 body {
-  padding: 60px 0;
-  background-color: rgba(178,209,229,0.7);
-  margin: 0 auto;
-  width: 600px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/payment_bg_lg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
 }
+
+#nav,a {
+    color: white;
+    margin: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Lucida Console", Courier, monospace;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+a:hover, a:focus {
+    color: black;
+    font-size:20px;
+  }
+
+#content {
+    padding: 60px 0;
+    margin: 0 auto;
+    width: 600px;
+  }
 .body-text {
   padding: 0 20px 30px 20px;
-  font-family: "Roboto";
+  font-family: "Lucida Console", Courier, monospace;
   font-size: 1em;
-  color: #333;
-  text-align: center;
+  color: white;
   line-height: 1.2em;
+  font-size: 18px;
+  text-align: center;
 }
+
 .form-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .card-wrapper {
   background-color: #6FB7E9;
   width: 100%;
@@ -33,7 +59,7 @@ body {
 }
 h1 {
   font-size: 1.3em;
-  font-family: "Roboto"
+  font-family: "Lucida Console", Courier, monospace;
 }
 input {
   margin: 1px 0;
@@ -43,14 +69,13 @@ input {
 input[type="text"]{
   display: block;
   height: 50px;
-  width: 97%;
-  border: none;
+  width: 96%;
+
 }
 input[type="email"]{
   display: block;
   height: 50px;
-  width: 97%;
-  border: none;
+  width: 96%;
 }
 input[type="submit"]{
   display: block;
@@ -61,28 +86,28 @@ input[type="submit"]{
   color: #fff;
   margin-top: 2px;
   curson: pointer;
-  font-size: 0.9em;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: bold;
   cursor: pointer;
+  font-family: "Lucida Console", Courier, monospace;
 }
 input[type="submit"]:hover{
   background-color: #6FB7E9;
   transition: 0.3s ease;
 }
 #column-left {
-  width: 46.5%;
+  width: 46%;
   float: left;
   margin-bottom: 2px;
 }
 #column-right {
-  width: 46.5%;
+  width: 46%;
   float: right;
 }
 
 @media only screen and (max-width: 480px){
   body {
-    width: 100%;
+    width: 96%;
     margin: 0 auto;
   }
   .form-container {
@@ -92,10 +117,10 @@ input[type="submit"]:hover{
     font-size: 1em;
   }
   #input-button {
-    width: 100%;
+    width: 96%;
   }
   #input-field {
-    width: 96.5%;
+    width: 96%;
   }
   h1 {
     font-size: 1.2em;
