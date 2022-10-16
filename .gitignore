@@ -139,6 +139,7 @@ dmypy.json
 __pycache__
 db.sqlite3
 media
+**/.DS_Store
 
 # Environments
 .env
