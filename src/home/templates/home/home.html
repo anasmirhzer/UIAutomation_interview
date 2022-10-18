@@ -13,16 +13,16 @@
       <div class="personal-information">
         <h1>Payment Information</h1>
       </div> <!-- end of personal-information -->
-          <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
-          <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
-          <input id="input-field" type="text" name="number" placeholder="Card Number"/>
-          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
-          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+          <input id="column-left" type="text" name="first-name" required="required" autocomplete="on" maxlength="10" placeholder="First Name"/>
+          <input id="column-right" type="text" name="last-name" required="required" autocomplete="on" maxlength="10" placeholder="Surname"/>
+          <input id="input-field" type="text" name="number" required="required" autocomplete="on" maxlength="16" placeholder="Card Number"/>
+          <input id="column-left" type="text" name="expiry" required="required" autocomplete="on" maxlength="4" placeholder="MM / YY"/>
+          <input id="column-right" type="text" name="cvc" required="required" autocomplete="on" maxlength="4" placeholder="CCV"/>
           <div class="card-wrapper"></div>
           <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
           <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
           <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
-          <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+          <input id="input-field" type="email" name="email"  maxlength="40" placeholder="Email"/>
           <input id="input-button" type="submit" value="MAKE PAYMENT : 30$"/>
     </form>
 {% endblock %}
